@@ -10,13 +10,14 @@
 	background: url("images/back.gif");
 	background-repeat: no-repeat;
 	background-size: 1500px 250px;
-	opacity: 0.5;
+	opacity: 1;
 	color: whitesmoke;
 	font-weight: bolder;
 	font-family: fantasy;
 	height: 200px;
 	background-origin: border-box;
 	background-position: -10px -10px;
+	text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 #nav_div {
@@ -63,22 +64,30 @@
 
 /* ----------------------------------------------- main section ------------------------------------------------- */
 
+#cover {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 #main_section {
-	width: 1300px;
+	width: 100%;
 	margin: 0px auto;
-	padding: 20px;
+	padding: 0px;
 }
 
 #section_1 {
-	margin-top: 30px;
+	margin-top: 30px auto;
+	width: 1200px;
 }
 
 #portals {
 	width: 280px;
-	font-family: monospace;
+	font-family: cursive;
 	padding: 10px;
 	color: gray;
 	float: left;
+	text-align: center;
+	font-size: 0.8em;
 }
 
 #portals ul li {
@@ -87,7 +96,7 @@
 
 #faculty {
 	width: 300px;
-	font-family: monospace;
+	font-family: cursive;
 	padding: 10px;
 	color: gray;
 	float: left;
@@ -96,16 +105,33 @@
 .section_1_grid {
 	width: 300px;
 	font-family: cursive;
-	padding: 10px;
+	padding: 30px;
 	padding-right: 45px;
+	font-size: 0.9em;
+	line-height: 1.6em;
 	color: gray;
 	float: left;
+	text-align: center;
+}
+
+.section_img {
+	width: 240px;
+	height: 200px;
 }
 
 .button {
 	background-color: darkgreen;
 	padding: 5px;
 	color: white;
+}
+
+.button_orange {
+	display: block;
+	width: 240px;
+	line-height: 2em;
+	font-size: 1.1em;
+	color: white;
+	background-color: darkorange;
 }
 
 .button a {

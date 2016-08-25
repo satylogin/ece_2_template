@@ -12,6 +12,7 @@
 	padding: 6px;
 	color: dimgray;
 	background-color: lightgray;
+	box-shadow: 5px 5px 5px #888;
 }
 
 .heading_contact_us {

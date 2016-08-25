@@ -10,11 +10,16 @@
 	float: left;
 	padding: 20px;
 	color: gray;
-	/*border: solid gray 1px;*/
+	box-shadow: 5px 5px 5px #888888;
 	margin: 10px 10px 10px 0px;
 	height: 650px;
 }
 
 .clear {
 	clear: both;
+}
+
+.campus_heading {
+	color: cornflowerblue;
+	font-weight: bold;
 }
