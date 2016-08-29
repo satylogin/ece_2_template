@@ -5,7 +5,6 @@
 
 #main_header {
 	background-color: darkslategrey;
-	border: solid black 2px;
 	padding: 0px;
 	background: url("images/back.gif");
 	background-repeat: no-repeat;
@@ -30,28 +29,68 @@
 }
 
 #main_navigation ul {
-	width: 1100px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	width: 1350px;
 	margin: 0 auto;
 }
 
 #main_navigation ul li {
-	display: inline-block;
-	margin: 0 auto;
-	padding: 10px;
+	float: left;
+	width: 160px;
 }
 
 #main_navigation ul li a {
-	text-decoration: none;
+	display: block;
+	padding: 15px 20px;
 	color: white;
-	font-size: 1.3em;
-	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
 }
 
 #main_navigation ul li a:hover{
-	text-decoration: none;
+	background-color: #333;
+}
+
+#main_navigation ul li ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #111;
+}
+
+#main_navigation ul li ul {
+	position: absolute;
+	width: 160px;
+	font-size: 0.8em;
+	z-index: 2; 
+}
+
+#main_navigation ul li ul li a {
+	display: none;
+}
+
+#main_navigation ul li:hover a {
+	background-color: #111;
+}
+
+#main_navigation ul li:hover ul li a{
+	display: block;
+	background-color: #222;
+}
+
+#main_navigation ul li ul li:hover a{
+	background-color: #111;
+}
+
+.active {
+	background-color: #222;
 	color: yellow;
-	background-color: gray;
-	padding: 10px;
 }
 
 #clear {
@@ -80,16 +119,6 @@
 	width: 1200px;
 }
 
-#portals {
-	width: 280px;
-	font-family: cursive;
-	padding: 10px;
-	color: gray;
-	float: left;
-	text-align: center;
-	font-size: 0.8em;
-}
-
 #portals ul li {
 	list-style: none;
 }
@@ -112,6 +141,37 @@
 	color: gray;
 	float: left;
 	text-align: center;
+}
+
+.section_2_grid {
+	width: 300px;
+	font-family: cursive;
+	padding: 30px;
+	padding-right: 45px;
+	font-size: 0.9em;
+	line-height: 1.6em;
+	color: gray;
+	float: left;
+	text-align: center;
+}
+
+.section_2_grid h3 {
+	color: darkslategray;
+}
+
+#portals {
+	width: 300px;
+	font-family: cursive;
+	padding: 30px;
+	color: gray;
+	float: left;
+	text-align: center;
+	font-size: 0.9em;
+	line-height: 1.6em;
+}
+
+#portals h3 {
+	color: darkslategray;
 }
 
 .section_img {
